@@ -393,7 +393,7 @@
 <header>
   <div class="logo">✦ Image Forge</div>
   <h1>Convierte.<br><span>Optimiza.</span> Listo.</h1>
-  <p class="subtitle">Conversión automática en tu navegador · sin uploads</p>
+  <p class="subtitle">Conversión automática de tu foto ·Para tu inscripción a la UTP</p>
   <div class="specs-bar">
     <span class="spec-tag">→ JPG</span>
     <span class="spec-tag">160 × 160 px</span>
@@ -598,7 +598,7 @@
         // Find quality that keeps size < MAX_BYTES
         let quality = 0.92;
         let blob;
-        const tryBlob = (q) => new Promise(res => canvas.toBlob(res, 'image/jpeg', q));
+        const tryBlob = (q) => new Promise(res => canvas.toBlob(res, 'image/jpg', q));
 
         (async () => {
           blob = await tryBlob(quality);
